@@ -1,4 +1,4 @@
-ys To Load Ruby Files
+Ways To Load Ruby Files
 
 1.
 [Kernel#require_relative](http://ruby-doc.org/core-2.2.3/Kernel.html#method-i-require_relative)
