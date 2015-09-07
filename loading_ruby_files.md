@@ -8,7 +8,7 @@ ys To Load Ruby Files
 [Kernel#autoload](http://ruby-doc.org/core-2.2.3/Kernel.html#method-i-autoload)
 
 ## Kernel#require_relative
-###### Benifits:
+###### Benefits:
 * Use when possible
 * Similar to require (loads programs only once)
 * Avoids errors found when running the program from other directories, which
@@ -22,14 +22,14 @@ require "#{File.dirname(__FILE__)}/../lib/foo"
 ## Kernel#require
 ###### Features:
 * Loads exactly once, will return false if already loaded.
-###### Benifits:
-* Prevents programs from loading the same code unessessarily.
+###### Benefits:
+* Prevents programs from loading the same code unnecessarily.
 * Can load ruby files (among others) without their extension ".rb"
-* Provides predicable loading behavior like 'load' but with the benifits of
+* Provides predicable loading behavior like 'load' but with the benefits of
   caching functionality that 'autoload' offers.
 
 ## Kernel#load
-###### Benifits:
+###### Benefits:
 * In an IRB session you can make changes to the loaded file and reload the file
   without needing to close the irb session
 ```
@@ -40,8 +40,8 @@ load 'foo.rb'
 ```
 
 ## Kernel#autoload
-I personally have not had a project that has needed this. Except indirectlty
+I personally have not had a project that has needed this. Except indirectly
 through rails own implementation of autoload that does something similar.
-##### Benifits:
+##### Benefits:
 * faster startup time
 * delayed loading of optional dependencies
